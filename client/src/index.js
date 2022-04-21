@@ -6,9 +6,6 @@ import DeviceStore from "./store/DeviceStore";
 
 export const Context = createContext(null)
 
-console.log(process.env.REACT_APP_API_URL)
-console.log("fff")
-
 ReactDOM.render(
     <Context.Provider value={{
         user: new UserStore(),
@@ -16,5 +13,6 @@ ReactDOM.render(
     }}>
         <App />
     </Context.Provider>,
-    document.getElementById('root')
+  document.getElementById('root')
 );
+
